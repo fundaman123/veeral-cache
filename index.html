@@ -1,205 +1,554 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta name="generator" content="HTML Tidy for HTML5 for Linux version 5.6.0">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<link rel="stylesheet" href="https://help.veeral.com/style-3.css">
-<title>Veeral Controls - Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veeral Controls</title>
 
-<link rel="apple-touch-icon" sizes="180x180" href="https://veeral.com/static/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://veeral.com/static/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://veeral.com/static/favicon-16x16.png">
-<link rel="manifest" href="https://veeral.com/static/site.webmanifest">
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-<style>
-   body { max-width:110rem }
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-   @media (min-width:700px) {
-      .gridheader { align-items:center; border:0; grid-template-columns: auto minmax(0, 1fr) }
-   }
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+    <style>
 
-  .w8 { width:8rem !important }
 
-   h1 { font-size:3.8rem }
-   h2 { font-size:3.0rem }
-   h3 { font-size:2.5rem }
-   h4 { font-size:2.2rem }
 
-   .div-body a { text-decoration:none }
-   .div-body a:hover { text-decoration:underline }
-   .div-body table { margin-bottom:2rem }
-   .div-body img { margin-right:0.5rem; margin-left:0.5rem }
-
-   blockquote { font-size:1em; background:white; border-left: 0.66rem solid #006cb7  }
-
-  .ai-center { align-items:center }
-  .extra-wide { width: calc(100vw - 20px); margin-left: calc(-50vw + 50% + 10px); }
-  .border-right { border-right: 1px solid #ccc }
-
-  .spacer { display:inline-block; width: 30px }
-
-  .decolor a { color:navy; text-decoration: none }
-  .decolor a:hover { text-decoration:underline }
-
-  .thumb { max-width:120px; display:inline-block }
-  .thumb-square { width:75px; height:75px; object-fit:cover; border:2px solid #eee }
-  .thumb-round img { object-fit:cover; border-radius:50%; border:1px solid #ccc; padding:2px }
-
-  .div-silver-block { background:#eee; border-radius:5px }
-  .div-block { min-height:7rem; line-height:7rem; margin:0.5rem }
-  .div-img-block { border-radius: 5px; background-size: cover; background-color:#eee; border:1px solid #ddd }
-  .div-img-block a { padding:0.5rem; background:#ffffffcc }
-
-  .size11 { font-size:1.1em }
-  .size12 { font-size:1.2em }
-  .size14 { font-size:1.4em }
-  .size16 { font-size:1.6em }
-  .size18 { font-size:1.8em }
-
-  .mb4 { margin-bottom:4rem }
-  .mb6 { margin-bottom:6rem }
-  .mt4 { margin-top:4rem }
-  .mt6 { margin-top:6rem }
-  .mx4 { margin-right:4rem; margin-left:4rem }
-
-  .pr1 { padding-right:1rem }
-
-  .div-preview div { max-width: 190px; margin-right:2.8rem; vertical-align:top; margin-bottom:2.5rem }
-  .div-preview div img { border:1px solid #ccc; padding:0.2rem; }
-
-  .div-img-outline img { border:1px solid #ccc; padding:0.2rem; }
-
-  @media (max-width:800px) {
-      .div-preview div { max-width:30%; margin-right:2%; }
-      .div-preview div img { width:100% }
-  }
-
-  @media (max-width:500px) {
-      .div-preview div { max-width:42%; margin-right:5%; }
-      .div-preview div img { width:100% }
-  }
-
-  @media (max-width:700px) {
-    .mx0-mob { margin-right:0; margin-left:0 }
-  }
-
-  @media (max-width:900px) {
-    .hideon900 { display:none }
-    .reseton900 { grid-template-columns: 1fr }
-  }
-
-  select { background: white; border: 0; min-width: 100px; font-weight: bold  } 
-
-   .gridheader a:hover { text-decoration:underline }
-
-   textarea { height:20rem; padding:0.25rem }
-
-   .e-click { cursor:pointer }
-
-   .gray-50 { filter:grayscale(50%) }
-
-   /* .div-card { display:grid; grid-column-gap: 1.5rem; grid-template-columns: 1fr 2fr } */
-   .div-card img { float:left; width: 150px; height:150px; margin-right:1.5rem; border-radius:50%; object-fit:cover }
-
-   .dw50 { max-width:50% }
-   .dw60 { max-width:60% }
-
-   .wfull { width: 95% }
-   .span2 {  grid-column-end: span 2 }
-
-   @media print {
-      .no-print { display: none }
-      @page { size: landscape; }
-      .page-break { page-break-after:always }
-   }
-
-</style>
+    </style>
 </head>
+
 <body>
- 
 
-<div class="gridheader mb2 no-print">
-  <div>
-    <a href="index.html">
-      <img src="https://storage.googleapis.com/veeralweb-img/title-med.png">
-    </a>
-  </div>
+    <!-- ================= HEADER ================= -->
+    <header class="shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container header-class">
 
-  <div class="text-right bk-silver phalf pr1">
-     <a href="p/products.html">Products</a>
-      <span class="text-light">/</span>
-     <a href="p/list-of-veeral-clients.html">Clients</a>
-      <span class="text-light">/</span>
-     <a href="p/contact.html">Contact</a>
-  </div>
-</div>
+                <!-- LOGO -->
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="assets/images/logo.png" alt="Veeral Controls" style="height:94px;">
+                </a>
 
-
+                <input type="checkbox" id="mobile-toggle">
+                <label for="mobile-toggle" class="custom-toggler">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
 
 
+                <!-- MOBILE TOGGLER -->
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+
+                <!-- MENU -->
+                <div class="navbar-collapse justify-content-end" id="mainNav">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
 
 
-<div class="div-body">
-
-  <div class="mb4 gridleftright g1-1 reseton900 ai-center">
-      <div class="size11 p1">
-          <h1>Veeral Controls</h1>
-<p>Veeral Controls Pvt Ltd is a 34 year old company engaged in HV Systems, High Current Power Supplies, Wind Energy Systems Instrumentation, drives, power controllers, precision power supplies, OEM/ODM activities and customized products and services with an enviable <a href="p/footprint.html">pedigree of innovation</a>.</p>
-      </div>
-
-      <div class="hideonmobile text-center">
-          <a href="https://www.youtube.com/v/ZV2MsLBNnIw">
-              <img src="https://storage.googleapis.com/veeralweb-img/veeral-yt-cleaned.jpg">
-          </a>
-      </div>
-  </div>
-
-  
-
-  <div class="mb4 div-preview">
-    <h2>Featured Products</h2><div class="ib text-center"> <img src="https://storage.googleapis.com/veeralweb-img/thumb/h-bridge-igbt-stack.jpeg"> <a href="p/350a-h-bridge-air-cooled-igbt-stack.html">350A H Bridge Air Cooled Igbt Stack</a> </div><div class="ib text-center"> <img src="https://storage.googleapis.com/veeralweb-img/thumb/solar-stack.jpeg"> <a href="p/solar-stack.html">Solar Stack</a> </div><div class="ib text-center"> <img src="https://storage.googleapis.com/veeralweb-img/thumb/igbt-hf-inverter.jpeg"> <a href="p/igbt-stack-for-hf-inverter.html">Igbt Stack For Hf Inverter</a> </div><div class="ib text-center"> <img src="https://storage.googleapis.com/veeralweb-img/thumb/250-igbt-stack.jpeg"> <a href="p/250kva-high-frequency-igbt-stack.html">250Kva High Frequency Igbt Stack</a> </div><div class="ib text-center"> <img src="https://storage.googleapis.com/veeralweb-img/thumb/board-03.jpeg"> <a href="p/customized-solutions.html">Customized Solutions</a> </div>
-  </div>
-
-
-  
-  
-
-  <div class="mb4 gridleftright g2-1 ai-center">
-      <div>
-          <img src="world-map.svg">
-      </div>
-
-      <div class="p1 size11 border-left">
-          <h2>Global Footprint</h2>
-<p>We have a growing global market in 9+ countries directly or through OEMs. As of 2023, we have executed projects in the following countries - United States, South Korea, Germany, Turkey, Sri Lanka, Australia and India. </p>
-      </div>
-  </div>
-
-
-  
-
-  <div class="mb4 div-preview">
-    <h2>Recent Events</h2><div class="ib text-center"> <img src="https://storage.googleapis.com/veeralweb-img/thumb/WhatsApp_Image_2024-09-13_at_22.53.51.jpeg"> <a href="p/visit-to-newcastle-australia.html">Visit To Newcastle Australia</a> </div><div class="ib text-center"> <img src="https://storage.googleapis.com/veeralweb-img/thumb/5136760778522624.jpeg"> <a href="p/veeral-at-pcim-2018.html">Veeral At Pcim 2018</a> </div><div class="ib text-center"> <img src="https://storage.googleapis.com/veeralweb-img/thumb/windegy-poster.jpeg"> <a href="p/veeral-at-windergy-2017.html">Veeral At Windergy 2017</a> </div><div class="ib text-center"> <img src="https://storage.googleapis.com/veeralweb-img/thumb/5758142528880640.jpeg"> <a href="p/renewable-energy-india-expo-2017.html">Renewable Energy India Expo 2017</a> </div>
-  </div>
- 
-
-  
-  
-
-  <div class="mb4 gridleftright g1-2 ai-center">
-      <div class="p1 size11 border-right"> <h2>Clients</h2>
-<p>Veeral Controls has a long running association with an <a href="p/list-of-veeral-clients.html">illustrious list of clients</a> and partners for the past 34 years. </p> </div>
-
-      <div> <img src="https://storage.googleapis.com/veeralweb-img/veeral-clients.png"> </div>
-  </div>
-
-</div>
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero-section d-flex align-items-center">
+        <div class="hero-inner">
+            <h1 class="hero-title">Advanced Power Electronics<br>for a High-Energy World</h1>
+            <p class="hero-text">
+                Mission-grade power-conversion systems<br> engineered for extreme environments,
+                precision <br>applications, and global critical infrastructure.
+            </p>
+            <a href="products.html" class="btn btn-danger px-4 py-2 mt-3">Explore Products</a>
+        </div>
+    </section>
 
 
 
-<!-- 21-nov-2025 0:24 -->
+    <!-- ================= INFO BAR ================= -->
+    <div class="info-bar-wrapper">
+        <div class="info-bar d-flex justify-content-between align-items-center">
+
+            <span><strong class="highlight">ISO 9001:2015</strong> Certified</span>
+
+            <span class="divider">|</span>
+
+            <span><strong class="highlight">32+ Years</strong> Engineering Leadership</span>
+
+            <span class="divider">|</span>
+
+            <span>Trusted in <strong class="highlight">9+ Countries</strong></span>
+
+        </div>
+    </div>
 
 
+
+    <!-- ================= WHAT WE DO SECTION ================= -->
+    <section class="what-we-do-section">
+        <div class="content-wrapper">
+
+            <!-- Title With Double Lines -->
+            <div class="title-container">
+                <div class="double-line"></div>
+                <h1 class="what-title">What <span class="we-do">We Do</span></h1>
+                <div class="double-line"></div>
+            </div>
+
+            <!-- MAIN PARAGRAPHS -->
+
+            <div class="what-we-para">
+                <p class="lead fw-bold">
+                    Veeral Controls is a global power-electronics engineering company delivering mission-grade,
+                    high-density conversion systems for precision high-current and high-voltage applications.
+                </p>
+
+                <p class="description">
+                    With 30+ years of deep domain expertise, we design and build ultra-fast converters,
+                    multi-MW inverter platforms, high-current rectifiers, precision magnet supplies, and advanced
+                    IGBT/SiC power stacks deployed across renewable energy, research accelerators, rail traction,
+                    defence, and critical infrastructure.
+                </p>
+
+                <p class="description">
+                    Our integrated engineering—spanning wide-bandgap semiconductors, multi-pulse rectification,
+                    advanced magnetics, real-time control, and thermal-electromagnetic simulation—enables robust,
+                    modular systems optimised for dynamic response, harmonic performance, and long operational life.
+                </p>
+
+                <p class="description last-desc">
+                    Trusted worldwide by OEMs and mission-critical industries, Veeral delivers proven power-conversion
+                    platforms built to the highest global standards.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- ================= FOCUS AREAS SECTION ================= -->
+    <section class="focus-areas-section">
+        <div class="focus-wrapper">
+
+            <!-- Focus Areas Tag -->
+            <div class="focus-tag">Focus Areas</div>
+
+            <!-- Orange Top Border -->
+            <div class="top-orange-line"></div>
+
+            <!-- 3 Boxes -->
+            <div class="row gx-4 mt-0 focus-area">
+
+                <!-- BOX 1 -->
+                <div class="col-md-4">
+                    <div class="focus-box">
+                        <img src="assets/images/train.png" class="img-fluid" alt="">
+                        <h1 class="focus-text">Mobility</h1>
+                    </div>
+                </div>
+
+                <!-- BOX 2 -->
+                <div class="col-md-4">
+                    <div class="focus-box">
+                        <img src="assets/images/technology.png" class="img-fluid" alt="">
+                        <h1 class="focus-text">Power <br>Conversion<br> Technologies</h1>
+                    </div>
+                </div>
+
+                <!-- BOX 3 -->
+                <div class="col-md-4">
+                    <div class="focus-box">
+                        <img src="assets/images/electronics.png" class="img-fluid" alt="">
+                        <h1 class="focus-text">Defence <br>High Power <br>Electronics</h1>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ================= WHY VEERAL SECTION ================= -->
+    <section class="why-viral-section">
+        <div class="content-wrapper">
+
+            <!-- Title With Double Lines -->
+            <div class="title-container why-title">
+                <div class="double-line why-doubleline"></div>
+                <h1 class="what-title">Why<span class="we-do"> Veeral</span></h1>
+                <div class="double-line why-doubleline"></div>
+            </div>
+
+            <div class="what-we-para">
+                <p class="lead fw-bold why-para">
+                    Reliability Engineered. Performance Proven.
+                </p>
+            </div>
+        </div>
+
+        <!-- ================= WHY VEERAL SLIDER ================= -->
+        <div class="why-slider-wrapper">
+
+            <!-- ✅ LEFT ARROW -->
+            <button class="slide-btn prev-btn veeral-left">←</button>
+
+            <div class="why-slider">
+
+                <!-- CARD 1 -->
+                <div class="why-card">
+                    <div class="icon-wrap">
+                        <img src="assets/images/icon1.png" alt="">
+                    </div>
+                    <p>30+ years of design & field experience</p>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="why-card">
+                    <div class="icon-wrap">
+                        <img src="assets/images/icon2.png" alt="">
+                    </div>
+                    <p>Ability to handle extreme power levels (kA, kV)</p>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="why-card">
+                    <div class="icon-wrap">
+                        <img src="assets/images/icon3.png" alt="">
+                    </div>
+                    <p>Custom-engineered solutions for unique applications</p>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="why-card">
+                    <div class="icon-wrap">
+                        <img src="assets/images/icon4.png" alt="">
+                    </div>
+                    <p>Compliance with demanding global standards</p>
+                </div>
+
+                <!-- CARD 5 -->
+                <div class="why-card">
+                    <div class="icon-wrap">
+                        <img src="assets/images/icon2.png" alt="">
+                    </div>
+                    <p>High-speed protection systems</p>
+                </div>
+
+                <!-- CARD 6 -->
+                <div class="why-card">
+                    <div class="icon-wrap">
+                        <img src="assets/images/icon3.png" alt="">
+                    </div>
+                    <p>Deep materials, thermal, & semiconductor expertise</p>
+                </div>
+
+                <!-- CARD 7 -->
+                <div class="why-card">
+                    <div class="icon-wrap">
+                        <img src="assets/images/icon4.png" alt="">
+                    </div>
+                    <p>OEM-friendly modular product design</p>
+                </div>
+
+            </div>
+
+            <!-- ✅ RIGHT ARROW -->
+            <button class="slide-btn next-btn veeral-right">→</button>
+
+        </div>
+    </section>
+
+
+
+    <!-- ================= INDUSTRIES SECTION ================= -->
+    <section class="industries">
+        <div class="content-wrapper focus-industries">
+
+            <!-- Title With Double Lines -->
+            <div class="title-container why-title">
+                <div class="double-line why-doubleline"></div>
+                <h1 class="what-title">Industries <span class="indus-app">& Applications</span></h1>
+                <div class="double-line why-doubleline"></div>
+            </div>
+
+            <div class="what-we-para">
+                <p class="lead fw-bold why-para">
+                    Powering the World’s Most Demanding Applications
+                </p>
+            </div>
+
+        </div>
+
+        <!-- SLIDER WRAPPER -->
+        <div class="industries-slider-wrapper">
+
+            <!-- Focus Tag -->
+            <div class="focus-tag">Application Capsules</div>
+
+            <!-- Orange Border -->
+            <div class="top-orange-line"></div>
+
+            <!-- ARROWS -->
+            <button class="slide-btn prev-btn">←</button>
+            <button class="slide-btn next-btn">→</button>
+
+            <!-- SLIDER -->
+            <div class="industries-slider">
+
+                <!-- CARD 1 -->
+                <div class="industry-card">
+                    <div class="industry-img">
+                        <img src="assets/images/solar.png" alt="">
+                    </div>
+                    <h2 class="industry-title">Wind & Solar Power<br> Conversion</h2>
+                    <p class="industry-desc">Multi-MW inverter platforms and<br> converter stacks for utility-scale<br>
+                        renewable systems.</p>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="industry-card">
+                    <div class="industry-img">
+                        <img src="assets/images/plasma.png" alt="">
+                    </div>
+                    <h2 class="industry-title">Plasma & Fusion<br> Research</h2>
+                    <p class="industry-desc">12 kA–80 kA precision supplies, fast-rise<br> converters, and magnet power
+                        systems.</p>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="industry-card">
+                    <div class="industry-img">
+                        <img src="assets/images/rail.png" alt="">
+                    </div>
+                    <h2 class="industry-title">Rail Traction & <br>Locomotive Systems</h2>
+                    <p class="industry-desc">High-reliability propulsion converters and<br> power modules.</p>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="industry-card">
+                    <div class="industry-img">
+                        <img src="assets/images/defence.png" alt="">
+                    </div>
+                    <h2 class="industry-title">Defence & Aerospace Systems</h2>
+                    <p class="industry-desc">MIL-grade motor controllers,<br> extreme-shock electronics, and<br>
+                        high-power
+                        conversion units.
+                    </p>
+                </div>
+
+                <!-- CARD 5 -->
+                <div class="industry-card">
+                    <div class="industry-img">
+                        <img src="assets/images/metal.png" alt="">
+                    </div>
+                    <h2 class="industry-title">Hydrogen, Metals & Electro-Intensive</h2>
+                    <p class="industry-desc">High-current rectifiers up to 72 kA for<br> sodium electrolysis, smelting,
+                        and<br>
+                        metallurgical processes.</p>
+                </div>
+
+                <!-- CARD 6 -->
+                <div class="industry-card">
+                    <div class="industry-img">
+                        <img src="assets/images/power.png" alt="">
+                    </div>
+                    <h2 class="industry-title">Grid Power Quality & FACTS</h2>
+                    <p class="industry-desc">Active harmonic filters, STATCOM<br> modules, and custom reactive power<br>
+                        solutions.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ================= Trusted by Industry Leaders SECTION ================= -->
+    <section class="leaders-section">
+        <div class="content-wrapper">
+
+            <!-- Title With Double Lines -->
+            <div class="title-container why-title">
+                <div class="double-line why-doubleline"></div>
+                <h1 class="what-title">Trusted by <span class="we-do">Industry Leaders</span></h1>
+                <div class="double-line why-doubleline"></div>
+            </div>
+
+            <div class="what-we-para">
+                <p class="lead fw-bold why-para">Our Clients Include:</p>
+            </div>
+
+        </div>
+
+        <!-- SLIDER WRAPPER -->
+        <div class="leaders-slider-wrapper">
+            <div class="leaders-slider" id="marquee">
+                <div class="leader-logo"><img src="assets/images/abb.png" alt=""></div>
+                <div class="leader-logo"><img src="assets/images/puv.png" alt=""></div>
+                <div class="leader-logo"><img src="assets/images/drdo.png" alt=""></div>
+                <div class="leader-logo"><img src="assets/images/indian-railways.png" alt=""></div>
+                <div class="leader-logo"><img src="assets/images/bhel.png" alt=""></div>
+                <div class="leader-logo"><img src="assets/images/shan-varun.png" alt=""></div>
+                <div class="leader-logo"><img src="assets/images/tat-steel.png" alt=""></div>
+                <div class="leader-logo"><img src="assets/images/aban.png" alt=""></div>
+                <div class="leader-logo"><img src="assets/images/cdac.png" alt=""></div>
+                <div class="leader-logo"><img src="assets/images/CPP.jpg" alt=""></div>
+                <div class="leader-logo"><img src="assets/images/electro.jpg" alt=""></div>
+                <div class="leader-logo"><img src="assets/images/renew.jpg" alt=""></div>
+                <div class="leader-logo"><img src="assets/images/signode.avif" alt=""></div>
+                <div class="leader-logo"><img src="assets/images/tata.png" alt=""></div>
+                <div class="leader-logo"><img src="assets/images/trutz.png" alt=""></div>
+                <div class="leader-logo"><img src="assets/images/welmech.jpeg" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= Recent Events ================= -->
+    <section class="recent-events">
+        <div class="recent-wrapper">
+
+            <!-- LEFT SIDE BOX -->
+            <div class="recent-left">
+                <h1 class="recent-title">Recent<br>Events</h1>
+                <a href="#" class="recent-btn">View More</a>
+            </div>
+
+            <!-- RIGHT SIDE EVENTS -->
+            <div class="recent-right">
+
+                <!-- CARD 1 -->
+                <div class="event-card">
+                    <img src="assets/images/img1.png" alt="" class="event-img">
+                    <div class="event-bottom">
+                        <h3>Visit to<br> Newcastle Australia</h3>
+                        <a href="#" class="event-arrow">→</a>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="event-card">
+                    <img src="assets/images/img2.png" alt="" class="event-img">
+                    <div class="event-bottom">
+                        <h3>Veeral at<br> PCIM</h3>
+                        <a href="#" class="event-arrow">→</a>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="event-card">
+                    <img src="assets/images/img3.png" alt="" class="event-img">
+                    <div class="event-bottom">
+                        <h3>Veeral at<br> Windergy</h3>
+                        <a href="#" class="event-arrow">→</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= FOOTER SECTION ================= -->
+    <footer class="footer-section">
+
+        <div class="footer-wrapper">
+
+            <!-- COLUMN 1 — LOGO -->
+            <div class="footer-col footer-logo">
+                <a href="index.html">
+                    <img src="assets/images/footer-logo.png" alt="Veeral Controls Logo" class="footer-logo-img">
+                </a>
+            </div>
+
+
+            <!-- COLUMN 2 — QUICK LINKS -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Quick Links:</h4>
+                <a href="products.html">Products</a>
+                <a href="about.html">About us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <!-- COLUMN 3 — SOCIAL LINKS -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Socials:</h4>
+                <a href="#">LinkedIn</a>
+                <a href="#">Facebook</a>
+            </div>
+
+            <!-- COLUMN 4 — CONTACT INFO -->
+            <div class="footer-col footer-contact">
+
+                <div class="footer-item">
+                    <span class="footer-icon">
+                        <img src="assets/images/call.png" alt="Phone">
+                    </span>
+                    <p>+91 99099 43601</p>
+                </div>
+
+                <div class="footer-item">
+                    <span class="footer-icon">
+                        <img src="assets/images/message.png" alt="Email">
+                    </span>
+                    <p>info@veeral.com</p>
+                </div>
+
+                <div class="footer-item">
+                    <span class="footer-icon">
+                        <img src="assets/images/location.png" alt="Location">
+                    </span>
+                    <p>
+                        Veeral Controls Pvt. Ltd.<br>
+                        B-29 GIDC, Sector-25,<br>
+                        Gandhinagar - 382044
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- BOTTOM BLUE STRIP WITH TEXT -->
+        <div class="footer-bottom-bar">
+            <div class="footer-bottom-content">
+                <span>Copyright © 2025 Veeral Controls</span>
+                <span>Designed by : <a href="https://4amdesigns.in" target="_blank">4amdesigns.in</a></span>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+    <!-- BOOTSTRAP JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    
 </body>
+
 </html>
