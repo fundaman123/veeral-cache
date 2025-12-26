@@ -126,7 +126,7 @@ header.shadow-sm {
 .hero-section {
     width: 100%;
     height: 80vh;
-    background: url('../images/homebanner.jpg') center/cover no-repeat;
+    background: url('../images/homebanner.jpg') left/cover no-repeat;
     position: relative;
     display: flex;
     align-items: center;
@@ -667,7 +667,7 @@ section.leaders-section {
 }
 
 .leader-logo img {
-  height: 100px;             /* fixed image height avoids layout shift */
+  max-height: 100px;
   width: auto;
   display: block;
 }
@@ -922,6 +922,7 @@ button.slide-btn.next-btn.Trusted {
     line-height: 19px;
     font-size: 15px;
     font-family: 'Roboto Slab';
+    padding-top: 6px;
 }
 
 /* BOTTOM DARK BLUE STRIP */
@@ -1027,7 +1028,7 @@ h1.recent-title {
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
     ul.navbar-nav.align-items-center {
         display: block;
     }
@@ -1051,7 +1052,7 @@ h1.recent-title {
     }
 }
 
-@media (min-width: 425px) {
+@media (min-width: 768px) {
     input#mobile-toggle {
         display: none;
     }
@@ -1062,7 +1063,7 @@ h1.recent-title {
 }
 
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
 
     /* Hide menu by default */
 .navbar-collapse {
@@ -1682,8 +1683,8 @@ h2.journey-year.item7-year {
     }
 }
 
-/* SMALL MOBILE (Below 425px) */
-@media (max-width: 425px) {
+/* SMALL MOBILE (Below 768px) */
+@media (max-width: 768px) {
     .different-item {
         gap: 12px;
     }
@@ -3002,7 +3003,7 @@ button.slide-btn.next-btn.veeral-right {
     top: 72%;
 }
 
-@media only screen and (max-width:425px) {
+@media only screen and (max-width:768px) {
 .header-class img {
     height: 70px !important;
 }
@@ -3067,9 +3068,9 @@ section.why-viral-section {
 .why-slider {
      padding: 40px 0 0px 0;
 }
-.slide-btn {
+/* .slide-btn {
     padding: 8px 8px;
-}
+} */
 .industry-title {
     font-size: 24px;
     line-height: 30px !important;
